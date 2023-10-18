@@ -12,9 +12,6 @@
       "name": "ALLOW_LIST",
       "label": "E-mail domain allow list",
       "description": "The e-mail domain allow list gives you the ability to create a list of e-mail burner domains allowed to register an account for your applications. This field allows you to specify multiple e-mail domains, by comma-separating them.",
-      "default_value": "",
-      "deploy_value": "",
-      "options": []
     }
   ],
   "dependencies": [ 
