@@ -1,4 +1,4 @@
-[[TODO: Summary text that does not duplicate the listing content]]
+[[This integration allows you to restrict access to your applications for users using e-mail burners, also known as "throw away" e-mails. ]]
 
 ## Prerequisites
 

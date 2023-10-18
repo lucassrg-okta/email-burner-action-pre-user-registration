@@ -1,5 +1,26 @@
 {
-  "secrets": [],
-  "configuration": [],
-  "dependencies": []
+  "configuration": [
+    {
+      "name": "ERROR_MSG",
+      "label": "Error Message",
+      "description": "Error message presented to the user",
+      "default_value": "${event.user.email.split('@')[1]} is an email burner 🔥. Please sign up with a valid email address",
+      "deploy_value": "${event.user.email.split('@')[1]} is an email burner 🔥. Please sign up with a valid email address",
+      "options": []
+    },
+    {
+      "name": "ALLOW_LIST",
+      "label": "E-mail domain allow list",
+      "description": "The e-mail domain allow list gives you the ability to create a list of e-mail burner domains allowed to register an account for your applications. This field allows you to specify multiple e-mail domains, by comma-separating them.",
+      "default_value": "",
+      "deploy_value": "",
+      "options": []
+    }
+  ],
+  "dependencies": [ 
+    {
+      "name": "burner-email-providers",
+      "version": "1.0" 
+    }
+  ]
 }
