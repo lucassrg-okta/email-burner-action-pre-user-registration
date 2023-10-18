@@ -7,8 +7,8 @@ const { isEmailBurner } = require("burner-email-providers");
 * @param {PreUserRegistrationAPI} api - Interface whose methods can be used to change the behavior of the signup.
 */
 exports.onExecutePreUserRegistration = async (event, api) => {
-  const allowList = event.configuration.ALLOW_LIST;
-  const errorMsg = event.configuration.ERROR_MSG;
+  const allowList = event.configuration.ALLOW_LIST || "";
+  const errorMsg = event.configuration.ERROR_MSG || `${event.user.email.split('@')[1]} is an email burner 🔥. Please sign up with a valid email address`;
   const emailDomain = event.user.email.split("@")[1];
 
   if (allowList.includes(emailDomain)) {
